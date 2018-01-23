@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Максимов](https://up.htmlacademy.ru/adaptive/13/user/385809).
-* Наставник: `Неизвестно`.
+* Наставник: [Мурат Баркинхоев](https://htmlacademy.ru/profile/id186857).
 
 ---
 
