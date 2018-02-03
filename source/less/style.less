@@ -1,0 +1,141 @@
+@import "normalize.less";
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("../source/fonts/opensans.woff2") format("woff2"),
+    url("../source/fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Light"),
+    url("../source/fonts/opensanslight.woff2") format("woff2"),
+    url("../source/fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold"),
+    url("../source/fonts/opensansbold.woff2") format("woff2"),
+    url("../source/fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283645;
+    
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper() {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.text-h3() {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.text-h4() {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #283645;
+}
+
+.page__wrapper {
+  .wrapper();
+}
+
+.design-btn() {
+  display: block;
+
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-width: 3px;
+  border-style: solid;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.btn {
+  .design-btn();
+}
+
+.page-promo() {
+  line-height: 30px;
+  text-align: center;
+}
+
+@import "blocks/page-header.less";
+
+@import "blocks/main-nav.less";
+
+@import "blocks/download.less";
+
+@import "blocks/information.less";
+
+@import "blocks/reviews.less";
+
+@import "blocks/price.less";
+
+@import "blocks/photo.less";
+
+@import "blocks/posting-form.less";
+
+@import "blocks/competition.less";
+
+@import "blocks/form-modal.less";
+
+@import "blocks/index-footer.less";
+
+@import "blocks/inner-footer.less";
