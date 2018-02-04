@@ -5,7 +5,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,30 +12,30 @@
   <!--
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
 	-->
-
+<div class="page__wrapper">
   <header class="page-header inner-header">
     <div class="page-header__top">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="#" alt="Логотип PINK" width="75" height="22">
-      </a>
-      <nav class="main-nav">
+      <div>
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" alt="Логотип PINK" width="75" height="22">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="mobile-menu">
-          <ul class="mobile-menu__list">
-            <li>
-              <a href="index.html">Главная</a>
-            </li>
-            <li>
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li>
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li>
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="mobile-menu__list">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li>
+            <a>Конкурс</a>
+          </li>
+          <li>
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </div>
     <p class="page-header__promo">Конкурс на самое безбашенное путешествие с Пинк</p>
@@ -44,75 +43,89 @@
 
   <main class="page-main">
 
-    <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-    </p>
+    <div class="competition__wrapper">
+      <p class="competition__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+      </p>
+    </div>
 
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <fieldset>
-        <label for="surname">Фамилия:</label>
-        <input id="surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
-        <label for="name">Имя:</label>
-        <input id="name" type="text" name="name" placeholder="Введите ваше имя *" required>
-        <label for="patronymic">Отчество:</label>
-        <input id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+    <form class="competition" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="fields">
+        <div class="competition__wrapper">
+          <label for="surname">Фамилия:</label>
+          <input id="surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
+          <label for="name">Имя:</label>
+          <input id="name" type="text" name="name" placeholder="Введите ваше имя *" required>
+          <label for="patronymic">Отчество:</label>
+          <input id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>Ваши безбашенные достижения в путешествии</legend>
-        <ul>
-          <li>
-            <input id="selfi" type="checkbox" name="selfi" checked>
-            <label for="selfi">Сделал селфи с акулой</label>
-          </li>
-          <li>
-            <input id="beach" type="checkbox" name="beach" checked>
-            <label for="beach">Обгорел на пляже</label>
-          </li>
-          <li>
-            <input id="norris" type="checkbox" name="norris">
-            <label for="norris">Видел Чака Норриса</label>
-          </li>
-          <li>
-            <input id="souvenir" type="checkbox" name="souvenir">
-            <label for="souvenir">Накупил сувениров</label>
-          </li>
-          <li>
-            <input id="nocrazy" type="checkbox" name="nocrazy" checked>
-            <label for="nocrazy">Удержал башню</label>
-          </li>
-          <li>
-            <input id="hotel" type="checkbox" name="hotel">
-            <label for="hotel">Разгромил отель</label>
-          </li>
-        </ul>
+      <fieldset class="toggles">
+        <div class="competition__wrapper">
+          <p class="fieldset__legend">Ваши безбашенные достижения в путешествии</p>
+          <ul>
+            <li>
+              <input id="selfi" type="checkbox" name="selfi" checked>
+              <label for="selfi">Сделал селфи с акулой</label>
+            </li>
+            <li>
+              <input id="beach" type="checkbox" name="beach" checked>
+              <label for="beach">Обгорел на пляже</label>
+            </li>
+            <li>
+              <input id="norris" type="checkbox" name="norris">
+              <label for="norris">Видел Чака Норриса</label>
+            </li>
+            <li>
+              <input id="souvenir" type="checkbox" name="souvenir">
+              <label for="souvenir">Накупил сувениров</label>
+            </li>
+            <li>
+              <input id="nocrazy" type="checkbox" name="nocrazy" checked>
+              <label for="nocrazy">Удержал башню</label>
+            </li>
+            <li>
+              <input id="hotel" type="checkbox" name="hotel">
+              <label for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
-      <fieldset>
-        <label for="tel">Номер телефона</label>
-        <input id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста">
-        <label for="email">Адрес почты</label>
-        <input id="email" type="email" name="email" placeholder="Введите почту *" required>
+      <fieldset class="fields">
+        <div class="competition__wrapper">
+          <label for="tel">Номер телефона</label>
+          <input id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста">
+          <label for="email">Адрес почты</label>
+          <input id="email" type="email" name="email" placeholder="Введите почту *" required>
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>Скаким приложением путешествовали?</legend>
-        <input id="ios" type="radio" name="toggle-os" value="ios" checked>
-        <label for="ios">Pink для iOS</label>
-        <input id="android" type="radio" name="toggle-os" value="android">
-        <label for="android">Pink на Android</label>
-        <input id="windows" type="radio" name="toggle-os" value="windows">
-        <label for="windows">Windows Phone</label>
+      <fieldset class="toggles">
+        <div class="competition__wrapper">
+          <p class="fieldset__legend">Скаким приложением путешествовали?</p>
+          <input id="ios" type="radio" name="toggle-os" value="ios" checked>
+          <label for="ios">Pink для iOS</label>
+          <input id="android" type="radio" name="toggle-os" value="android">
+          <label for="android">Pink на Android</label>
+          <input id="windows" type="radio" name="toggle-os" value="windows">
+          <label for="windows">Windows Phone</label>
+        </div>
       </fieldset>
-      <fieldset>
-        <label for="user-letter">Опишите свои эмоции</label>
-        <textarea name="user-letter" id="user-letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <fieldset class="fields">
+        <div class="competition__wrapper">
+          <label for="user-letter">Опишите свои эмоции</label>
+          <textarea name="user-letter" id="user-letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
       </fieldset>
-      <button class="form-btn" type="submit">Отправить форму</button>
-      <p class="form-remark"><sup>*</sup> - обязательные поля</p>
+        <div class="competition__wrapper">
+          <button class="form-btn" type="submit">Отправить форму</button>
+          <p class="form-remark"><sup>*</sup> - обязательные поля</p>
+        </div>
     </form>
   </main>
 
   <footer class="page-footer inner-footer">
     <div class="footer-top">
       <a href="index.html">
-        <img class="footer-logo" src="img/logotype-blue-tablet.png" alt="Логотип Пинк" width="147" height="40">
+        <img class="footer-logo" src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк" width="147" height="40">
       </a>
     </div>
     <div class="footer-middle">
@@ -134,22 +147,30 @@
     </div>
   </footer>
 
-  <section class="modal-send-good">
-    <h3>Ваша заявка отправлена</h3>
-    <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-    <div class="modal-bottom">
-      <button class="form-btn" type="submit">Закрыть окно</button>
+  <section class="modal-send-good form-modal">
+    <div class="form-modal__wrapper">
+      <h3>Ваша заявка отправлена</h3>
+      <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="modal-bottom">
+        <button class="form-btn" type="submit">Закрыть окно</button>
+      </div>
     </div>
   </section>
 
-  <section class="modal-send-wrong">
-    <h3>Что-то пошло не так!</h3>
-    <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="form-btn" type="submit">ОК</button>
+  <section class="modal-send-wrong form-modal">
+    <div class="form-modal__wrapper">
+      <h3>Что-то пошло не так!</h3>
+      <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+    <div class="form-modal__footer">
+      <div class="form-modal__wrapper">
+        <button class="form-btn" type="submit">ОК</button>
+      </div>
+    </div>
   </section>
 
   <script src="js/script.js"></script>
-
+</div>
 </body>
 
 </html>
