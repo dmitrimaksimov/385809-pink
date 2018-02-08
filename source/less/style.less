@@ -27,7 +27,11 @@
   font-style: normal;
 }
 
+@tablet-width: 660px;
+@desktop-width: 1200px;
+
 body {
+  min-width: 320px;
   padding: 0;
 
   font-family: "Open Sans", "Arial", sans-serif;
@@ -68,7 +72,7 @@ input[type="radio"].visually-hidden {
 
 .wrapper() {
   margin: 0 auto;
-  width: 320px;
+  width: 280px;
 }
 
 .text-h3() {
@@ -87,6 +91,19 @@ input[type="radio"].visually-hidden {
 
 .page__wrapper {
   .wrapper();
+}
+
+@media (min-width: @tablet-width) {
+  .page__wrapper {
+    margin: auto;
+	width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__wrapper {
+    width: 1160px;
+  }
 }
 
 .design-btn() {
