@@ -1,12 +1,30 @@
 .download {
   padding-top: 28px;
   padding-bottom: 28px;
+  order: 2;
 
   background-color: #1d2631;
 
   text-align: center;
 }
 
+.page-header__promo {  
+  padding-top: 25px;
+  padding-bottom: 85px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+
+.index__promo {
+  display: none;
+}
 .download__wrapper {
   padding: 0 20px;
 }
@@ -14,17 +32,6 @@
 .download a,
 .download p {
   color: #ffffff;
-}
-
-.markets-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 22px;
-
-  list-style: none;
 }
 
 .download-by-defoult {
@@ -48,4 +55,101 @@
   color: rgba(210, 40, 86, 0.3);
 
   background-color: #ffffff;
+}
+
+.markets-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 22px;
+  width: 210px;
+
+  list-style: none;
+}
+
+.markets-list a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 55px;
+  height: 65px;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.markets-list__itunes {
+  background-image: url("../img/logo-apple.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 47px 56px;
+}
+
+.markets-list__android {
+  background-image: url("../img/logo-android.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 43px 47px;
+}
+
+.markets-list__microsoft {
+  background-image: url("../img/logo-microsoft.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 44px 41px;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    width: 300px;
+
+    background: transparent;
+  }
+
+  .index__promo {
+    display: block;
+  }
+
+  .inner__promo {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .page-header__promo{
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .markets-list {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    width: 300px;
+    margin-right: auto;
+
+    background: transparent;
+  }
+
+  .index__promo {
+    display: block;
+  }
+
+  .inner__promo {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .page-header__promo {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .markets-list {
+    margin-bottom: 60px;
+  }
 }

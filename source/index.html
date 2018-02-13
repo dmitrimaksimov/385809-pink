@@ -5,6 +5,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,7 +22,7 @@
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
       </div>
-      <nav class="main-nav">
+	  <nav class="main-nav">
         <ul class="mobile-menu__list">
           <li>
             <a>Главная</a>
@@ -38,33 +39,38 @@
         </ul>
       </nav>
     </div>
-    <p class="page-header__promo">Взгляните на жизнь иначе!</p>
-    <p class="page-header__image">
-      <img src="img/iphone-hand-mobile@1x.png" alt="iphone5 в руке" width="258" height="286">
-    </p>
+    <div class="page-header__wrapper">
+      <p class="page-header__image"></p>
+      <section class="download">
+        <div class="download__wrapper">
+          <h2 class="visually-hidden">Загрузить приложение</h2>
+          <p class="page-header__promo index__promo">Взгляните на жизнь иначе!</p>
+          <a class="download-by-defoult btn" href="https://www.apple.com/ru/itunes">Скачать приложение</a>
+          <ul class="markets-list">
+            <li>
+              <a class="markets-list__itunes" href="https://www.apple.com/ru/itunes">iTunes</a>
+            </li>
+            <li>
+              <a class="markets-list__android" href="https://play.google.com/store/apps">Google Play</a>
+            </li>
+            <li>
+              <a class="markets-list__microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Microsoft Store</a>
+            </li>
+          </ul>
+          <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+      </div>
+    </section>
+    </div>
   </header>
 
   <main class="page-main">
 
     <h1 class="visually-hidden">Мобильное приложение "Пинк"</h1>
 
-    <section class="download">
-      <div class="download__wrapper">
-        <h2 class="visually-hidden">Загрузить приложение</h2>
-        <a class="download-by-defoult btn" href="https://www.apple.com/ru/itunes">Скачать приложение</a>
-        <ul class="markets-list">
-          <li><a href="https://www.apple.com/ru/itunes">iTunes</a></li>
-          <li><a href="https://play.google.com/store/apps">Google Play</a></li>
-          <li><a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Microsoft Store</a></li>
-        </ul>
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
-      </div>
-    </section>
-
     <section class="information">
       <div class="information__wrapper">
         <h4>Устали от серости мегаполиса?</h4>
-        <h4>Нам есть, что вам предложить!</h4>
+        <h4>Нам есть, что вам<br>предложить!</h4>
         <ul class="advantages">
           <li>
             <h3>Поднимает настроение</h3>
@@ -90,19 +96,19 @@
       <div class="reviews__wrapper slider">
         <div class="reviews__list slider__list">
           <div class="reviews__item slider__item">
-            <h3 class="reviews__author-name">Николай Петров</h3>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </blockquote>
           </div>
           <div class="reviews__item slider__item">
-            <h3 class="reviews__author-name">Николай Петров</h3>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </blockquote>
           </div>
           <div class="reviews__item slider__item">
-            <h3 class="reviews__author-name">Николай Петров</h3>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </blockquote>
           </div>
         </div>
         <p class="reviews__toggles slider__toggles">
