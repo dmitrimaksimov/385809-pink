@@ -1,4 +1,4 @@
-.inner-footer {
+.page-footer {
   padding-top: 35px;
 
   text-align: center;
@@ -27,4 +27,20 @@
   margin: 0 auto;
   margin-bottom: 35px;
   width: 140px;
+}
+
+.page-footer.index-footer {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer.index-footer {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer.index-footer {
+    display: block;
+  }
 }
